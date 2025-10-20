@@ -4,8 +4,8 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Hello": "Пошел нахуй"}
 
-@app.get("/add/{a}/{b}")
+@app.post("/add/{a}/{b}")
 def add_numbers(a: int, b: int):
     return {"result": a + b}
